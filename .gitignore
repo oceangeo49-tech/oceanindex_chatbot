@@ -1,0 +1,16 @@
+# Secrets and local configuration
+active_key.md
+.env
+.env.*
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated evaluation reports and pre-Git backup
+reports/
+reports_archive_*/
+
+# Local editor/workspace state
+*.code-workspace
+

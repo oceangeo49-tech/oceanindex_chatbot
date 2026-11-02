@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>오프라인 해양예보 챗봇 구축 방향</title>
+<style>
+  :root{
+    --bg:#061824;
+    --bg2:#0b2535;
+    --ink:#f4fbff;
+    --muted:#a9c4d4;
+    --blue:#3dd6ff;
+    --green:#75f0b0;
+    --yellow:#ffd166;
+    --red:#ff6b6b;
+    --card:rgba(255,255,255,.075);
+    --card2:rgba(255,255,255,.11);
+    --line:rgba(255,255,255,.20);
+    --shadow:0 30px 80px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box;word-break:keep-all;overflow-wrap:normal;line-break:strict;text-wrap:pretty;}
+  html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif;}
+  body::before{content:"";position:fixed;inset:0;background:
+    radial-gradient(circle at 20% 10%, rgba(61,214,255,.25), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(117,240,176,.16), transparent 30%),
+    linear-gradient(135deg,#04111b 0%,#092334 48%,#061824 100%);z-index:-2;}
+  body::after{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom, rgba(0,0,0,.45), transparent 76%);z-index:-1;}
+  .slide{position:absolute;inset:0;display:none;padding:58px 72px 56px 72px;}
+  .slide.active{display:block;animation:fade .32s ease-out}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  h1,h2,h3,p{margin:0}
+  h1{font-size:58px;line-height:1.08;letter-spacing:-2.2px;font-weight:850;max-width:1050px;}
+  h2{font-size:38px;line-height:1.2;letter-spacing:-1.2px;font-weight:800;margin-bottom:22px;}
+  h3{font-size:22px;line-height:1.28;letter-spacing:-.4px;font-weight:760;margin-bottom:12px;color:#d9f7ff}
+  p,li{font-size:19px;line-height:1.5;color:#dbedf5;letter-spacing:-.25px}
+  li{margin-bottom:8px}
+  ul{margin:0;padding-left:22px}
+  .kicker{font-size:17px;color:var(--blue);font-weight:760;letter-spacing:.5px;margin-bottom:15px;text-transform:uppercase}
+  .subtitle{font-size:25px;color:#d8edf8;line-height:1.45;max-width:890px;margin-top:20px}
+  .small{font-size:14px;color:var(--muted);line-height:1.42}
+  .muted{color:var(--muted)}
+  .accent{color:var(--blue)} .green{color:var(--green)} .yellow{color:var(--yellow)} .red{color:var(--red)}
+  .grid{display:grid;gap:18px}
+  .cols2{grid-template-columns:1fr 1fr}.cols3{grid-template-columns:repeat(3,1fr)}.cols4{grid-template-columns:repeat(4,1fr)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:23px 25px;box-shadow:var(--shadow);backdrop-filter:blur(8px)}
+  .card.light{background:rgba(255,255,255,.11)}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(61,214,255,.45);background:rgba(61,214,255,.11);color:#c8f6ff;border-radius:999px;padding:8px 13px;font-size:15px;font-weight:750;margin:0 8px 8px 0}
+  .hero{height:100%;display:flex;flex-direction:column;justify-content:center;max-width:1110px}
+  .big-num{font-size:52px;line-height:1;font-weight:900;color:var(--blue);letter-spacing:-1.5px;margin-bottom:10px}
+  .diagram{display:flex;align-items:center;gap:13px;margin-top:14px}
+  .node{flex:1;min-height:108px;border-radius:22px;background:rgba(255,255,255,.09);border:1px solid var(--line);padding:19px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:18px;font-weight:750;line-height:1.35;color:#eefaff;box-shadow:0 15px 45px rgba(0,0,0,.2)}
+  .arrow{font-size:30px;color:var(--blue);font-weight:900;opacity:.95}
+  pre,code,.url{word-break:break-all;overflow-wrap:anywhere;line-break:auto;text-wrap:auto;}
+  pre{margin:0;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:18px 20px;font-size:16px;line-height:1.42;color:#e8f7ff;white-space:pre-wrap;font-family:"D2Coding","Cascadia Code","Consolas",monospace;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+  .two-pane{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:stretch}
+  .table{width:100%;border-collapse:collapse;font-size:16px;overflow:hidden;border-radius:18px;border:1px solid var(--line)}
+  .table th,.table td{padding:12px 13px;text-align:left;border-bottom:1px solid rgba(255,255,255,.10);vertical-align:top;line-height:1.38}
+  .table th{background:rgba(61,214,255,.15);color:#d8f8ff;font-size:15px}.table tr:last-child td{border-bottom:0}
+  .flowline{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:24px}.step{position:relative;background:rgba(255,255,255,.085);border:1px solid var(--line);border-radius:22px;padding:19px 15px;min-height:136px}.step .n{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:rgba(61,214,255,.20);border:1px solid rgba(61,214,255,.50);font-weight:900;color:#e5fbff;margin-bottom:12px}.step p{font-size:16.5px;line-height:1.35;font-weight:750;color:#e9f7ff}
+  .foot{position:absolute;left:72px;right:72px;bottom:24px;display:flex;align-items:center;justify-content:space-between;color:rgba(221,239,248,.62);font-size:13px}.progress{position:fixed;left:0;bottom:0;height:5px;background:linear-gradient(90deg,var(--blue),var(--green));width:0%;transition:width .2s ease;z-index:10}.navhint{position:fixed;right:22px;bottom:18px;color:rgba(255,255,255,.45);font-size:12px;z-index:12}.mark{display:inline-block;padding:3px 8px;border-radius:8px;background:rgba(117,240,176,.13);color:#d6ffe7;font-weight:800}.quote{font-size:27px;line-height:1.42;font-weight:800;color:#f0fbff;letter-spacing:-.7px}.warning{background:rgba(255,209,102,.12);border-color:rgba(255,209,102,.35)}
+  .wave{position:absolute;right:62px;bottom:68px;width:330px;height:170px;opacity:.55}.wave svg{width:100%;height:100%}
+  .mini{font-size:15.5px;line-height:1.42;color:#dbeef7}
+  .badge{display:inline-block;border:1px solid rgba(117,240,176,.42);background:rgba(117,240,176,.11);color:#d6ffe7;border-radius:10px;padding:4px 8px;font-size:13px;font-weight:800;margin-bottom:8px}
+  .note{margin-top:12px;padding:14px 16px;border-radius:16px;background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.11)}
+  @media print{html,body{height:auto;overflow:auto;background:white;color:#111}.slide{position:relative;display:block !important;page-break-after:always;height:100vh;background:#061824}.navhint,.progress{display:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><div class="navhint">← → / Space</div>
+
+<section class="slide active">
+  <div class="hero">
+    <div class="kicker">Offline Marine Forecast Chatbot</div>
+    <h1>오프라인 해양예보<br><span class="accent">챗봇 구축 방향</span></h1>
+    <p class="subtitle">CSV/DB 기반 지수서비스에 로컬 언어모델을 연결해, 사용자의 다양한 질문을 정확한 데이터 조회와 자연어 답변으로 변환하는 구조</p>
+    <div style="margin-top:34px">
+      <span class="pill">자연어 질문</span><span class="pill">구조화 JSON</span><span class="pill">Python/DB 조회</span><span class="pill">로컬 LLM 답변</span>
+    </div>
+  </div>
+  <div class="wave"><svg viewBox="0 0 600 220" fill="none"><path d="M5 115C82 55 148 55 225 115C302 175 368 175 445 115C522 55 588 55 665 115" stroke="#3dd6ff" stroke-width="18" stroke-linecap="round"/><path d="M5 160C82 100 148 100 225 160C302 220 368 220 445 160C522 100 588 100 665 160" stroke="#75f0b0" stroke-width="14" stroke-linecap="round" opacity=".65"/></svg></div>
+  <div class="foot"><span>발표용 HTML 슬라이드</span><span>1</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Current data</div>
+  <h2>현재 데이터는 챗봇화하기 좋은 구조입니다</h2>
+  <div class="grid cols3" style="margin-top:8px">
+    <div class="card"><div class="big-num">1,600</div><h3>행</h3><p>예보 생산일 기준 지역·어종·날짜·시간별 지수 데이터</p></div>
+    <div class="card"><div class="big-num">35</div><h3>컬럼</h3><p>지역, 예측일자, 시간, 어종, 파고, 수온, 기온, 풍속, 유속, 특보, 총점수, 예보지수</p></div>
+    <div class="card"><div class="big-num">34×7×3</div><h3>주요 축</h3><p>지역 34개, 어종 7개, 예측일자 7일, 시간 AM/PM/DY</p></div>
+  </div>
+  <div class="card light" style="margin-top:22px">
+    <p class="quote">핵심은 “AI가 데이터를 외우는 것”이 아니라,<br>사용자 질문을 <span class="accent">정확한 조회 조건</span>으로 바꾸는 것입니다.</p>
+    <div class="note"><p class="mini">예보 데이터는 계속 바뀌므로, 모델을 매번 재학습시키기보다 CSV/DB를 최신화하고 챗봇은 그 데이터를 조회하도록 설계합니다.</p></div>
+  </div>
+  <div class="foot"><span>기반 파일: SFEQ_INDEX_SERVICE_20250616.csv</span><span>2</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Problem</div>
+  <h2>if문으로 질문을 하나씩 처리하면 금방 한계가 옵니다</h2>
+  <div class="two-pane">
+    <div class="card warning">
+      <h3>사용자 표현은 계속 달라집니다</h3>
+      <p>같은 의미라도 질문 방식이 제각각입니다.</p>
+      <div style="margin-top:18px">
+        <span class="pill">내일 바람 약한 곳?</span>
+        <span class="pill">낼 어디가 잔잔해?</span>
+        <span class="pill">오후 풍속 낮은 지점</span>
+        <span class="pill">바람 제일 안 부는 지역</span>
+      </div>
+      <div class="note"><p class="mini">문장별로 대응하면 표현이 하나 늘 때마다 규칙을 추가해야 합니다.</p></div>
+    </div>
+    <div class="card">
+      <h3>잘못된 접근</h3>
+      <pre>if "내일" in question:
+    ...
+elif "바람" in question:
+    ...
+elif "약한" in question:
+    ...</pre>
+      <p style="margin-top:15px">질문 표현이 늘어날수록 유지보수가 어려워지고 누락이 많아집니다.</p>
+    </div>
+  </div>
+  <div class="foot"><span>문장별 처리 → 의도별 처리로 전환</span><span>3</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Why not endless if statements?</div>
+  <h2>모든 문장을 if문으로 만드는 것은<br>모든 주문을 통째로 외우는 것과 같습니다</h2>
+  <div class="two-pane">
+    <div class="card warning">
+      <h3>같은 볶음밥 주문도 표현은 계속 달라집니다</h3>
+      <div style="margin-top:8px">
+        <span class="pill">볶음밥 주세요</span>
+        <span class="pill">볶음밥 하나 부탁해요</span>
+        <span class="pill">밥 볶은 음식 먹고 싶어요</span>
+        <span class="pill">볶음밥 한 그릇 가능할까요?</span>
+      </div>
+      <pre style="margin-top:14px">if 질문 == "볶음밥 주세요":
+    볶음밥을_만든다()
+elif 질문 == "볶음밥 하나 부탁해요":
+    볶음밥을_만든다()
+# 새로운 표현이 생길 때마다 계속 추가</pre>
+    </div>
+    <div class="card">
+      <h3>해양예보 질문은 조건까지 서로 조합됩니다</h3>
+      <div class="grid cols2" style="gap:10px;margin-top:10px">
+        <div class="note"><p class="mini"><b>날짜 4개</b><br>오늘·내일·모레·주말</p></div>
+        <div class="note"><p class="mini"><b>시간 3개</b><br>오전·오후·종일</p></div>
+        <div class="note"><p class="mini"><b>어종 7개</b><br>참돔·우럭·농어 등</p></div>
+        <div class="note"><p class="mini"><b>지표 6개</b><br>파고·기온·수온 등</p></div>
+      </div>
+      <div class="card light" style="margin-top:14px;padding:17px 20px">
+        <p class="quote" style="font-size:23px">4 × 3 × 7 × 6 × 계산 4가지<br><span class="yellow">= 2,016가지 조합</span></p>
+      </div>
+      <div class="note"><p class="mini">여기에 사람마다 다른 말투까지 더해지므로, 문장별 if문은 빠르게 감당하기 어려워집니다.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>if문 방식 = 가능한 모든 문장을 하나씩 외우는 방식</span><span>4</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Restaurant analogy</div>
+  <h2>LLM은 종업원, JSON은 주문서, Python은 주방입니다</h2>
+  <div class="diagram" style="margin-top:20px">
+    <div class="node">손님<br><span class="muted">“내일 참돔 지역 중<br>파도 낮은 곳?”</span></div><div class="arrow">→</div>
+    <div class="node">LLM 종업원<br><span class="muted">질문의 뜻과 조건 이해</span></div><div class="arrow">→</div>
+    <div class="node">JSON 주문서<br><span class="muted">내일·참돔·평균파고<br>낮은 순·1곳</span></div><div class="arrow">→</div>
+    <div class="node">Python 주방<br><span class="muted">CSV에서 정확히<br>검색·계산</span></div>
+  </div>
+  <div class="grid cols2" style="margin-top:26px">
+    <div class="card light">
+      <h3>주방은 몇 가지 조리법만 준비합니다</h3>
+      <p>목록, 상세, 순위, 조건, 개수, 비교, 추세, 추천 등 약 10개의 범용 기능을 질문 조건에 맞게 조합합니다.</p>
+      <div class="note"><p class="mini">새로운 말투가 들어와도 같은 JSON 주문서로 바뀌면 Python 함수를 새로 만들 필요가 없습니다.</p></div>
+    </div>
+    <div class="card warning">
+      <h3>메뉴에 없는 주문은 마음대로 만들지 않습니다</h3>
+      <p>CSV에 없거나 지원하지 않는 질문은 실행 전에 검사하고, 가능한 범위를 다시 안내합니다.</p>
+      <div class="note"><p class="mini">예: “근처 맛집도 알려줘” → “현재 지수 파일에는 맛집 정보가 없습니다. 해양예보 정보는 안내할 수 있습니다.”</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>LLM은 통역, JSON은 표준 주문서, Python은 검증된 계산</span><span>5</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">How LLM understands language</div>
+  <h2>LLM은 많은 문장에서<br>“다른 말, 같은 뜻”의 패턴을 배웁니다</h2>
+  <div class="two-pane">
+    <div class="card light">
+      <h3>아이도 여러 표현을 경험하며 뜻을 연결합니다</h3>
+      <div style="margin-top:8px">
+        <span class="pill">물을 주세요</span>
+        <span class="pill">물 좀 줄래?</span>
+        <span class="pill">목말라</span>
+        <span class="pill">마실 것 있어?</span>
+      </div>
+      <div class="note"><p>문장은 달라도 비슷한 상황에서 반복되면, 모두 <b>“물을 원한다”</b>는 뜻과 연결됩니다.</p></div>
+    </div>
+    <div class="card">
+      <h3>표현을 숫자 좌표로 바꾸고 서로의 관계를 학습합니다</h3>
+      <div class="diagram" style="flex-direction:column;align-items:stretch;gap:10px;margin-top:8px">
+        <div class="node" style="min-height:56px">제일 높다 ≈ 가장 높다 ≈ 최고다</div>
+        <div class="node" style="min-height:56px">파도가 낮다 ≈ 물결이 잔잔하다</div>
+        <div class="node" style="min-height:56px">어디가 좋아? ≈ 적합한 지역 추천</div>
+      </div>
+    </div>
+  </div>
+  <div class="card warning" style="margin-top:20px">
+    <p><span class="mark">문맥도 함께 확인</span> “기온이 높다”는 평균기온, “파도가 높다”는 평균파고, “점수가 높다”는 총점수를 선택합니다.</p>
+  </div>
+  <div class="foot"><span>처음 보는 말투도 학습한 의미 관계를 이용해 일반화</span><span>6</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Meaning as numbers</div>
+  <h2>“숫자 패턴”은 말의 뜻을<br>숫자로 된 의미지도에 놓는 것입니다</h2>
+  <div class="two-pane">
+    <div class="card light">
+      <h3>지도에서 가까우면 쓰임도 비슷합니다</h3>
+      <div class="diagram" style="flex-direction:column;align-items:stretch;gap:10px;margin-top:8px">
+        <div class="node" style="min-height:62px">“제일 따뜻한 곳”<br><span class="muted">[ 0.82, -0.14, 0.67, … ]</span></div>
+        <div class="node" style="min-height:62px">“기온이 가장 높은 지역”<br><span class="muted">[ 0.80, -0.11, 0.70, … ]</span></div>
+      </div>
+      <div class="note"><p class="mini">숫자는 이해를 돕기 위한 예시입니다. 실제 모델은 수백~수천 개 숫자로 된 좌표를 사용하며, 각 숫자 하나에 고정된 뜻이 있는 것은 아닙니다.</p></div>
+    </div>
+    <div class="card">
+      <h3>많은 문장을 읽으며 지도를 조금씩 고칩니다</h3>
+      <div class="grid cols2" style="gap:10px;margin-top:8px">
+        <div class="note"><span class="badge">1</span><p class="mini">문장을 작은 단위로 나눕니다.</p></div>
+        <div class="note"><span class="badge">2</span><p class="mini">각 단위를 숫자 좌표로 바꿉니다.</p></div>
+        <div class="note"><span class="badge">3</span><p class="mini">다음에 올 말을 맞혀봅니다.</p></div>
+        <div class="note"><span class="badge">4</span><p class="mini">틀린 만큼 내부 숫자를 조정합니다.</p></div>
+      </div>
+      <div class="note" style="margin-top:14px"><p>이 과정을 아주 많이 반복하면 <b>“잔잔한 바다”</b>와 <b>“파도가 낮은 곳”</b>처럼 비슷한 상황에서 쓰이는 표현이 가까운 관계로 자리 잡습니다.</p></div>
+    </div>
+  </div>
+  <div class="card warning" style="margin-top:20px">
+    <p><span class="mark">쉽게 말하면</span> LLM은 단어 뜻을 사전처럼 한 줄로 외우기보다, 어떤 말이 어떤 말과 자주 어울리는지를 거대한 숫자 지도에 기록합니다.</p>
+  </div>
+  <div class="foot"><span>문장 → 숫자 좌표(벡터) → 관계 학습 → 비슷한 표현 이해</span><span>7</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Training vs service</div>
+  <h2>자동으로 고치는 것은 “학습할 때”이고,<br>서비스 중에는 모델의 숫자가 고정됩니다</h2>
+  <div class="two-pane">
+    <div class="card light">
+      <div class="badge">학습 단계</div>
+      <h3>문제를 풀고 자동 채점하며 조금씩 수정</h3>
+      <pre>문제: "파도가 낮아서 바다가 ___"
+
+모델 예측: "뜨겁다"  ✕
+실제 문장: "잔잔하다" ○
+
+→ 틀린 정도를 계산
+→ 내부 숫자를 아주 조금 조정</pre>
+      <div class="note"><p class="mini">개발자가 학습 방법과 데이터를 준비하면, 학습 프로그램이 오차를 계산해 모델의 내부 숫자(가중치)를 자동으로 조정합니다.</p></div>
+    </div>
+    <div class="card warning">
+      <div class="badge">서비스 단계</div>
+      <h3>다운로드한 모델은 대화만으로 변하지 않음</h3>
+      <div class="diagram" style="flex-direction:column;align-items:stretch;gap:10px;margin-top:8px">
+        <div class="node" style="min-height:58px">학습이 끝난 Qwen3-8B</div>
+        <div class="arrow" style="transform:rotate(90deg);align-self:center;font-size:23px">→</div>
+        <div class="node" style="min-height:58px">우리 서버에 다운로드<br><span class="muted">내부 숫자 고정</span></div>
+        <div class="arrow" style="transform:rotate(90deg);align-self:center;font-size:23px">→</div>
+        <div class="node" style="min-height:58px">질문을 많이 받아도<br><span class="muted">저절로 재학습하지 않음</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="card light" style="margin-top:20px">
+    <p><span class="mark">서비스 개선 방법</span> 잘못 이해한 질문을 모아 프롬프트와 JSON 예시를 보완하거나, 필요할 때 별도의 미세조정을 수행합니다.</p>
+  </div>
+  <div class="foot"><span>자동 학습과 실시간 대화는 서로 다른 단계</span><span>8</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Guide & guardrails</div>
+  <h2>언어 능력에 우리 서비스의 규칙과 예시를 더합니다</h2>
+  <div class="two-pane">
+    <div class="card">
+      <h3>허용할 필드와 변환 규칙을 알려줍니다</h3>
+      <pre>사용 가능 지표:
+평균파고, 평균수온, 평균기온,
+평균풍속, 평균유속, 총점수, 예보지수
+
+"가장 높다" → sort: "desc"
+"가장 낮다" → sort: "asc"
+"전부"       → return_all: true</pre>
+      <div class="note"><p class="mini">실제 질문과 정답 JSON 예시를 함께 주면, 새로운 말투도 같은 형식으로 변환하기 쉬워집니다.</p></div>
+    </div>
+    <div class="card warning">
+      <h3>LLM도 애매한 말은 틀릴 수 있습니다</h3>
+      <p class="quote" style="font-size:24px">“물이 좋은 곳 알려줘”</p>
+      <div style="margin-top:14px">
+        <span class="pill">수온이 적절한 곳?</span>
+        <span class="pill">파도가 낮은 곳?</span>
+        <span class="pill">총점이 높은 곳?</span>
+      </div>
+      <div class="note"><p>뜻이 하나로 정해지지 않으면 추측하지 않고 <b>사용자에게 기준을 다시 묻습니다.</b></p></div>
+    </div>
+  </div>
+  <div class="card light" style="margin-top:20px">
+    <p><span class="mark">안전장치</span> CSV에 있는 필드만 허용하고, Python이 JSON을 검사한 뒤 실행하며, 없는 정보는 답변하지 않습니다.</p>
+  </div>
+  <div class="foot"><span>LLM의 일반화 능력 + 서비스 규칙 + Python 검증</span><span>9</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Target architecture</div>
+  <h2>추천 구조: LLM은 해석·설명, Python/DB는 계산</h2>
+  <div class="flowline">
+    <div class="step"><div class="n">①</div><p>사용자<br>자연어 질문</p></div>
+    <div class="step"><div class="n">②</div><p>로컬 LLM<br>질문 → JSON</p></div>
+    <div class="step"><div class="n">③</div><p>Python/DB<br>검색·필터·계산</p></div>
+    <div class="step"><div class="n">④</div><p>조회 결과<br>숫자·지수</p></div>
+    <div class="step"><div class="n">⑤</div><p>로컬 LLM<br>자연어 설명</p></div>
+    <div class="step"><div class="n">⑥</div><p>사용자<br>최종 답변</p></div>
+  </div>
+  <div class="card light" style="margin-top:28px">
+    <p><span class="mark">중요</span> 판단 근거와 수치는 기존 지수 산출 결과와 DB에서 가져오고, LLM은 표현과 질문 이해를 담당합니다.</p>
+    <div class="note"><p class="mini">이렇게 나누면 챗봇 답변과 기존 웹 표출 지수가 서로 다르게 나오는 위험을 줄일 수 있습니다.</p></div>
+  </div>
+  <div class="foot"><span>Source of Truth = CSV/DB</span><span>10</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Example</div>
+  <h2>예시: “내일 오후 바람 가장 약한 지역 알려줘”</h2>
+  <div class="two-pane">
+    <div class="card">
+      <h3>LLM이 추출할 JSON</h3>
+      <pre>{
+  "date": "내일",
+  "time": "PM",
+  "region": "ALL",
+  "variable": "평균풍속",
+  "operation": "min",
+  "intent": "ranking"
+}</pre>
+    </div>
+    <div class="card">
+      <h3>Python/DB가 수행할 작업</h3>
+      <pre>target = df[
+  (df["예측일자"] == target_date) &
+  (df["시간"] == "PM")
+]
+
+result = target.sort_values("평균풍속").head(5)</pre>
+    </div>
+  </div>
+  <div class="card light" style="margin-top:22px">
+    <h3>최종 답변 방향</h3>
+    <p>“내일 오후 기준 평균풍속이 가장 낮은 지역은 ○○이며, 평균풍속은 ○○m/s입니다. 다음으로 ○○, ○○ 순입니다.”</p>
+  </div>
+  <div class="foot"><span>복잡한 표현도 같은 JSON 구조로 정규화</span><span>11</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Not fine-tuning first</div>
+  <h2>AI를 새로 학습시키기보다, 공개 모델을 연결합니다</h2>
+  <div class="diagram">
+    <div class="node">모델 개발사<br><span class="muted">대규모 데이터·GPU로 사전학습</span></div><div class="arrow">→</div>
+    <div class="node">공개 가중치<br><span class="muted">Qwen, Gemma, EXAONE 등</span></div><div class="arrow">→</div>
+    <div class="node">우리 서버 다운로드<br><span class="muted">오프라인 구동</span></div><div class="arrow">→</div>
+    <div class="node">우리 DB 연결<br><span class="muted">해양예보 챗봇</span></div>
+  </div>
+  <div class="grid cols2" style="margin-top:28px">
+    <div class="card"><h3>모델은 일반 언어 능력 담당</h3><p>“낼 오후” 같은 구어체를 날짜·시간·의도 등 구조화된 조건으로 변환합니다.</p></div>
+    <div class="card"><h3>데이터는 매일 갱신</h3><p>예보 CSV/DB만 교체하면 챗봇은 최신 데이터를 조회합니다. 모델 재학습은 기본적으로 필요 없습니다.</p></div>
+  </div>
+  <div class="foot"><span>모델 학습 ≠ 서비스 구축. 대부분은 연결·검증·운영 설계입니다.</span><span>12</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Offline deployment</div>
+  <h2>오프라인 서버에 심을 때의 전체 구성</h2>
+  <div class="two-pane">
+    <div class="card">
+      <h3>서버 내부 구성</h3>
+      <div class="diagram" style="flex-direction:column;align-items:stretch;gap:9px;margin-top:8px">
+        <div class="node" style="min-height:60px">웹 채팅 UI</div>
+        <div class="arrow" style="transform:rotate(90deg);align-self:center;font-size:24px">→</div>
+        <div class="node" style="min-height:60px">FastAPI / 업무 API</div>
+        <div class="arrow" style="transform:rotate(90deg);align-self:center;font-size:24px">→</div>
+        <div class="node" style="min-height:60px">vLLM 또는 llama.cpp</div>
+        <div class="arrow" style="transform:rotate(90deg);align-self:center;font-size:24px">→</div>
+        <div class="node" style="min-height:60px">로컬 LLM + 해양예보 DB</div>
+      </div>
+    </div>
+    <div class="card light">
+      <h3>오프라인 구축의 장점</h3>
+      <ul>
+        <li>외부 API 호출 없이 내부 서버에서 처리</li>
+        <li>질문당 API 토큰 비용 없음</li>
+        <li>민감한 예보 데이터와 로그를 내부망에 보관</li>
+        <li>모델은 고정하고 예보 데이터만 매일 갱신 가능</li>
+      </ul>
+      <div class="note"><p class="mini">대신 GPU, RAM, 동시 사용자 수, 모델 크기에 따라 응답속도가 달라집니다.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>운영 핵심: 모델 서버와 업무 API를 분리</span><span>13</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Performance</div>
+  <h2>동시 사용자가 늘면 느려질 수 있습니다</h2>
+  <div class="grid cols3">
+    <div class="card"><div class="big-num">1</div><h3>주 병목</h3><p>CSV/DB 조회보다 로컬 LLM 추론이 가장 무겁습니다.</p></div>
+    <div class="card"><div class="big-num">2</div><h3>해결 방향</h3><p>Queue, 캐시, 타임아웃, 동시 요청 제한으로 서버 다운을 방지합니다.</p></div>
+    <div class="card"><div class="big-num">3</div><h3>설계 원칙</h3><p>LLM에는 계산을 시키지 말고 조건 추출과 설명만 맡깁니다.</p></div>
+  </div>
+  <div class="card light" style="margin-top:24px">
+    <p class="quote">총 이용자 수보다 중요한 것은 <span class="yellow">동시 질문 수</span>입니다.</p>
+    <p style="margin-top:12px">대국민 서비스라도 실제 동시 사용자가 많지 않다면, 4B~8B급 모델부터 검증하는 것이 현실적입니다.</p>
+  </div>
+  <div class="foot"><span>성능은 서버 사양·모델 크기·동시 요청 수로 결정</span><span>14</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Thinking mode</div>
+  <h2>Thinking 기능은 기본적으로 끄는 방향이 적합합니다</h2>
+  <div class="two-pane">
+    <div class="card">
+      <h3>챗봇이 해야 할 일</h3>
+      <pre>"낼 오후 가거도 감성돔 어때?"
+
+→ region = "가거도"
+→ date = "내일"
+→ time = "PM"
+→ fish = "감성돔"
+→ intent = "index_query"</pre>
+    </div>
+    <div class="card warning">
+      <h3>굳이 긴 추론이 필요하지 않은 이유</h3>
+      <ul>
+        <li>복잡한 계산은 Python/DB가 수행</li>
+        <li>지수 판단은 기존 알고리즘 결과 사용</li>
+        <li>LLM은 통역사·설명자 역할</li>
+        <li>Thinking ON은 응답시간과 GPU 점유를 늘릴 수 있음</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>빠른 JSON 추출 + 정확한 DB 계산</span><span>15</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Open-weight models</div>
+  <h2>언어모델은 “누군가 만들어 공개한 AI 두뇌”를 내려받아 씁니다</h2>
+  <div class="grid cols3">
+    <div class="card">
+      <div class="badge">만드는 쪽</div>
+      <h3>AI 기업·연구팀</h3>
+      <p>Alibaba, NAVER, LG AI Research, Google 같은 곳에서 대규모 데이터와 GPU로 모델을 학습합니다.</p>
+    </div>
+    <div class="card">
+      <div class="badge">공개되는 것</div>
+      <h3>모델 가중치</h3>
+      <p>학습이 끝난 모델 파일을 공개하면, 기관 서버에 다운로드해 로컬로 실행할 수 있습니다.</p>
+    </div>
+    <div class="card">
+      <div class="badge">우리 역할</div>
+      <h3>연결·검증·운영</h3>
+      <p>모델이 해양예보 DB를 조회하도록 API를 연결하고, 답변 정확도와 운영 안정성을 검증합니다.</p>
+    </div>
+  </div>
+  <div class="card light" style="margin-top:26px">
+    <p class="quote">즉, “AI를 처음부터 만드는 일”이 아니라<br><span class="green">공개 모델을 우리 서비스에 맞게 연결하는 일</span>에 가깝습니다.</p>
+  </div>
+  <div class="foot"><span>오픈웨이트 모델은 내부망 서버에서 독립 실행 가능</span><span>16</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Model candidates</div>
+  <h2>초기 후보 모델은 4B~8B 중심으로 비교합니다</h2>
+  <table class="table">
+    <thead><tr><th>모델</th><th>만든 곳</th><th>강점</th><th>확인할 점</th><th>초기 판단</th></tr></thead>
+    <tbody>
+      <tr><td><b>Qwen3-8B</b></td><td>Alibaba Cloud / Qwen 팀</td><td>한국어 포함 다국어, 구조화·도구호출에 적합, Apache 2.0 계열 공개</td><td>4B보다 서버 부담 큼</td><td>우선 시험</td></tr>
+      <tr><td><b>Qwen3-4B</b></td><td>Alibaba Cloud / Qwen 팀</td><td>가볍고 빠름, 같은 Qwen 계열이라 구조화 테스트에 적합</td><td>8B 대비 복잡한 표현 처리력 검증 필요</td><td>속도 비교</td></tr>
+      <tr><td><b>HyperCLOVA X SEED 1.5B</b></td><td>NAVER</td><td>한국어·한국 문화 관련 벤치마크 강점 가능, 매우 가벼움</td><td>라이선스와 공공서비스 적용 조건 확인 필요</td><td>보조 후보</td></tr>
+      <tr><td><b>EXAONE 4.0 1.2B / 32B</b></td><td>LG AI Research</td><td>한국어 지원, vLLM 구동 사례, 모델 크기 선택 폭 존재</td><td>1.2B는 안정성, 32B는 서버 비용 검토 필요</td><td>비교 후보</td></tr>
+      <tr><td><b>Gemma 3</b></td><td>Google</td><td>다국어 지원, 다양한 크기, 단일 GPU 구동 지향</td><td>한국어 구어체와 JSON 안정성 실험 필요</td><td>참고 후보</td></tr>
+    </tbody>
+  </table>
+  <div class="grid cols3" style="margin-top:18px">
+    <div class="card"><h3>선정 기준 1</h3><p class="mini">사용자 질문을 정해진 JSON으로 얼마나 정확히 바꾸는가</p></div>
+    <div class="card"><h3>선정 기준 2</h3><p class="mini">동시 요청 상황에서 응답속도와 GPU 사용량이 감당 가능한가</p></div>
+    <div class="card"><h3>선정 기준 3</h3><p class="mini">라이선스가 대국민 서비스와 내부망 배포에 적합한가</p></div>
+  </div>
+  <div class="foot"><span>모델은 “이름”보다 실제 질문 테스트 결과로 선택</span><span>17</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Test plan</div>
+  <h2>모델 선택은 실제 질문 세트로 검증합니다</h2>
+  <div class="two-pane">
+    <div class="card">
+      <h3>질문 세트 예시</h3>
+      <div style="margin-top:6px">
+        <span class="pill">낼 가거도 감성돔 괜찮아?</span>
+        <span class="pill">내일 오후 바람 제일 약한 곳</span>
+        <span class="pill">주말에 우럭 좋은 지역</span>
+        <span class="pill">파고 1m 이하인 곳만</span>
+        <span class="pill">이번 주 가장 좋은 날짜</span>
+      </div>
+      <div class="note"><p class="mini">실제 민원·검색어·업무자가 예상하는 구어체를 섞어 200~500개 정도 준비합니다.</p></div>
+    </div>
+    <div class="card">
+      <h3>평가 기준</h3>
+      <ul>
+        <li>지역·어종·날짜·시간 추출 정확도</li>
+        <li>intent 분류 정확도</li>
+        <li>JSON 형식 오류 발생률</li>
+        <li>응답시간과 동시 처리 성능</li>
+        <li>근거 없는 수치 생성 여부</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card light" style="margin-top:24px">
+    <p><span class="mark">권장</span> Qwen3-4B, Qwen3-8B, 한국어 특화 소형 모델을 같은 질문 세트에 넣고 정확도와 속도를 동시에 비교합니다.</p>
+  </div>
+  <div class="foot"><span>성능 검증 후 모델과 서버 사양을 확정</span><span>18</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Implementation roadmap</div>
+  <h2>구축은 작게 검증한 뒤 확장하는 순서가 안전합니다</h2>
+  <div class="grid cols4">
+    <div class="card"><div class="big-num">1</div><h3>질문 유형 정의</h3><p>조회, 비교, 순위, 추천, 조건 필터 등 핵심 intent 10개 내외</p></div>
+    <div class="card"><div class="big-num">2</div><h3>정답 JSON 세트</h3><p>실제 사용자 말투 200~500개와 기준 JSON 작성</p></div>
+    <div class="card"><div class="big-num">3</div><h3>모델 비교</h3><p>Qwen3-4B/8B 등 정확도·속도·GPU 사용량 검증</p></div>
+    <div class="card"><div class="big-num">4</div><h3>프로토타입</h3><p>CSV → Python 조회 → LLM 답변 → 웹 채팅 UI 연결</p></div>
+  </div>
+  <div class="card light" style="margin-top:26px">
+    <p class="quote">최종 목표는 “AI가 답을 상상하는 챗봇”이 아니라,<br><span class="green">공식 예보 데이터를 정확히 찾아 설명하는 챗봇</span>입니다.</p>
+  </div>
+  <div class="foot"><span>다음 단계: 현재 CSV 기반 최소 프로토타입 제작</span><span>19</span></div>
+</section>
+
+<section class="slide">
+  <div class="kicker">Sources & notes</div>
+  <h2>참고자료 및 운영 전 확인 사항</h2>
+  <div class="grid cols2">
+    <div class="card">
+      <h3>모델 정보 출처</h3>
+      <ul>
+        <li class="url">Qwen3 공식 발표: https://www.alibabacloud.com/en/press-room/alibaba-introduces-qwen3-setting-new-benchmark</li>
+        <li class="url">HyperCLOVA X SEED 1.5B: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B</li>
+        <li class="url">EXAONE 4.0: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B</li>
+        <li class="url">Gemma 3: https://ai.google.dev/gemma/docs/core/model_card_3</li>
+      </ul>
+    </div>
+    <div class="card warning">
+      <h3>운영 전 확인</h3>
+      <ul>
+        <li>선정 모델의 라이선스와 공공서비스 적용 가능 여부</li>
+        <li>오프라인 서버 GPU/VRAM/RAM 사양</li>
+        <li>동시 사용자 목표치와 응답시간 기준</li>
+        <li>답변 로그, 오류 검수, 금칙 응답 정책</li>
+        <li>데이터 미존재 시 안내 문구와 재질문 흐름</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>모델 정보와 라이선스는 배포 시점에 재확인 권장</span><span>20</span></div>
+</section>
+
+<script>
+const slides=[...document.querySelectorAll('.slide')];
+let i=0;
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('active',k===i));document.getElementById('progress').style.width=((i+1)/slides.length*100)+'%';}
+function next(){show(i+1)} function prev(){show(i-1)}
+document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();next()} if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();prev()} if(e.key==='Home')show(0); if(e.key==='End')show(slides.length-1);});
+let sx=0;document.addEventListener('touchstart',e=>sx=e.changedTouches[0].screenX);document.addEventListener('touchend',e=>{let dx=e.changedTouches[0].screenX-sx;if(Math.abs(dx)>60){dx<0?next():prev();}});
+show(0);
+</script>
+</body>
+</html>

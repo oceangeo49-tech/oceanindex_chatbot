@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>오프라인 해양예보 챗봇</title>
+  <style>
+    :root{
+      --bg:#061824;
+      --bg2:#0b2535;
+      --ink:#f4fbff;
+      --muted:#a9c4d4;
+      --blue:#3dd6ff;
+      --green:#75f0b0;
+      --yellow:#ffd166;
+      --card:rgba(255,255,255,.075);
+      --line:rgba(255,255,255,.16);
+      --shadow:0 30px 80px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Pretendard,"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif}
+    body{
+      background:
+        radial-gradient(circle at 20% 10%, rgba(61,214,255,.23), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(117,240,176,.14), transparent 30%),
+        linear-gradient(135deg,#04111b 0%,#092334 48%,#061824 100%);
+      overflow:hidden;
+    }
+    body::after{
+      content:"";
+      position:fixed;inset:0;
+      background-image:linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size:52px 52px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.45), transparent 76%);
+      pointer-events:none;
+    }
+    .app{height:100%;display:grid;grid-template-rows:auto 1fr auto;max-width:1200px;margin:0 auto;padding:22px}
+    .topbar{
+      display:flex;justify-content:space-between;align-items:center;gap:16px;
+      padding:18px 22px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.06);box-shadow:var(--shadow);backdrop-filter:blur(8px);
+    }
+    .brand{display:flex;flex-direction:column;gap:4px}
+    .brand h1{margin:0;font-size:22px;letter-spacing:-.4px}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid rgba(61,214,255,.35);
+      background:rgba(61,214,255,.11);
+      color:#c8f6ff;
+      border-radius:999px;padding:8px 12px;font-size:13px;font-weight:700;
+    }
+    .layout{
+      display:grid;grid-template-columns:1.35fr .65fr;gap:18px;min-height:0;margin-top:18px;
+    }
+    .chat, .side{
+      min-height:0;border:1px solid var(--line);border-radius:24px;background:var(--card);box-shadow:var(--shadow);backdrop-filter:blur(8px);
+    }
+    .chat{display:grid;grid-template-rows:auto 1fr auto}
+    .chat-head{padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .chat-head h2{margin:0;font-size:18px}
+    .chat-head .desc{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.45}
+    .messages{padding:18px;overflow:auto;display:flex;flex-direction:column;gap:14px}
+    .msg{max-width:86%;padding:16px 18px;border-radius:18px;line-height:1.65;font-size:15px;border:1px solid transparent;overflow-wrap:anywhere}
+    .msg.user{align-self:flex-end;background:linear-gradient(180deg, rgba(61,214,255,.23), rgba(61,214,255,.12));border-color:rgba(61,214,255,.28)}
+    .msg.bot{align-self:flex-start;background:rgba(0,0,0,.24);border-color:rgba(255,255,255,.10)}
+    .message-body p{margin:0 0 12px}
+    .message-body p:last-child{margin-bottom:0}
+    .message-body h1,.message-body h2,.message-body h3{margin:0 0 10px;line-height:1.35;letter-spacing:-.2px}
+    .message-body h1{font-size:1.12em}
+    .message-body h2{font-size:1.08em}
+    .message-body h3{font-size:1.02em;color:#c8f6ff}
+    .message-body ul,.message-body ol{margin:4px 0 14px;padding-left:22px}
+    .message-body li{padding-left:3px;margin:5px 0}
+    .message-body strong{color:#fff;font-weight:800}
+    .message-body blockquote{margin:10px 0;padding:8px 12px;border-left:3px solid var(--blue);color:#dbeef7;background:rgba(61,214,255,.07)}
+    .msg .small{display:block;margin-top:10px;color:rgba(255,255,255,.68);font-size:12px}
+    .msg.bot.streaming .message-body::after{
+      content:"";display:inline-block;width:2px;height:1.05em;margin-left:4px;vertical-align:-2px;
+      background:var(--blue);border-radius:2px;animation:cursorBlink .72s steps(1) infinite;
+    }
+    @keyframes cursorBlink{50%{opacity:0}}
+    .composer{padding:16px;border-top:1px solid rgba(255,255,255,.08);display:grid;gap:12px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{
+      cursor:pointer;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#e7f7ff;
+      border-radius:999px;padding:8px 12px;font-size:13px;transition:.15s ease;
+    }
+    .chip:hover{transform:translateY(-1px);border-color:rgba(117,240,176,.35)}
+    .row{display:flex;gap:10px}
+    textarea{
+      flex:1;resize:none;min-height:58px;max-height:140px;
+      border-radius:18px;border:1px solid rgba(255,255,255,.14);
+      background:rgba(0,0,0,.28);color:var(--ink);padding:14px 16px;font:inherit;outline:none;
+    }
+    button.send{
+      min-width:110px;border:0;border-radius:18px;cursor:pointer;
+      background:linear-gradient(135deg, var(--blue), var(--green));color:#03131d;font-weight:900;font-size:15px;
+      box-shadow:0 18px 30px rgba(61,214,255,.18);
+    }
+    .side{padding:18px;overflow:auto}
+    .panel{padding:16px;border:1px solid rgba(255,255,255,.10);border-radius:18px;background:rgba(0,0,0,.18);margin-bottom:14px}
+    .panel h3{margin:0 0 10px;font-size:16px}
+    .panel p,.panel li{margin:0;color:#dbeef7;font-size:13px;line-height:1.6}
+    .panel ul{margin:0;padding-left:18px}
+    pre{
+      margin:0;white-space:pre-wrap;word-break:break-word;
+      background:rgba(0,0,0,.28);border-radius:14px;padding:12px 14px;border:1px solid rgba(255,255,255,.10);
+      color:#e8f7ff;font-size:12px;line-height:1.45;overflow:auto;
+    }
+    .status{color:var(--muted);font-size:12px}
+    .spinner{display:none}
+    .typing .spinner{display:inline}
+    .footer{padding:12px 4px 0;color:rgba(255,255,255,.48);font-size:12px;text-align:right}
+    @media (max-width: 960px){
+      body{overflow:auto}
+      .app{height:auto;min-height:100%;padding:14px}
+      .layout{grid-template-columns:1fr}
+      .messages{max-height:58vh}
+      .msg{max-width:100%}
+    }
+    @media (prefers-reduced-motion: reduce){
+      .msg.bot.streaming .message-body::after{animation:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div class="brand">
+        <h1>오프라인 해양예보 챗봇</h1>
+
+      </div>
+      <div class="meta" id="metaPills">
+        <span class="pill">기준일: <span id="baseDate">-</span></span>
+      </div>
+    </div>
+
+    <div class="layout">
+      <section class="chat">
+        <div class="chat-head">
+          <h2>대화</h2>
+          <div class="desc">지역과 날짜, 어종을 알려주시면 낚시 지수와 바다 날씨를 안내해 드립니다.</div>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="composer" id="composer">
+          <div class="chips">
+            <button class="chip" data-prompt="내일 오후 바람 가장 약한 지역 알려줘">내일 오후 바람 가장 약한 지역</button>
+            <button class="chip" data-prompt="참돔을 서비스하는 지역을 전부 알려줘">참돔 서비스 지역 전체</button>
+            <button class="chip" data-prompt="내일 모레 지수가 매우좋음인 지역과 어종 다 알려줘">내일·모레 매우좋음 전체</button>
+            <button class="chip" data-prompt="지수가 뭐야?">지수란?</button>
+            <button class="chip" data-prompt="매우좋음은 어떤 단계야?">매우좋음 의미</button>
+            <button class="chip" data-prompt="참돔 특징과 서식 환경을 알려줘">참돔 특징</button>
+          </div>
+          <div class="row">
+            <textarea id="input" placeholder="질문을 입력하세요. 예: 내일 오후 바람 가장 약한 지역"></textarea>
+            <button class="send" id="sendBtn">전송</button>
+          </div>
+          <div class="status" id="status">대기 중</div>
+        </div>
+      </section>
+
+      <aside class="side">
+        <div class="panel">
+          <h3>지원하는 질문</h3>
+          <ul>
+            <li>지역·어종·날짜·시간별 상세 조회</li>
+            <li>전체 목록, 개수, 상위·하위 순위</li>
+            <li>파고·수온·기온·풍속·유속 조건과 비교</li>
+            <li>공식 설명자료 기반 지수 단계와 어종 특징</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">해양예보 안내</div>
+  </div>
+
+  <script>
+    const messages = document.getElementById('messages');
+    const input = document.getElementById('input');
+    const sendBtn = document.getElementById('sendBtn');
+    const statusEl = document.getElementById('status');
+    const composer = document.getElementById('composer');
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    }
+
+    // The model returns a small, controlled Markdown subset. Escape first so
+    // generated text can never inject HTML into the chat window.
+    function renderMarkdown(markdown) {
+      const lines = markdown.replace(/\r\n?/g, '\n').split('\n');
+      const out = [];
+      let paragraph = [];
+      let list = null;
+      const inline = value => escapeHtml(value)
+        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>');
+      const flushParagraph = () => {
+        if (paragraph.length) {
+          out.push(`<p>${paragraph.map(inline).join('<br>')}</p>`);
+          paragraph = [];
+        }
+      };
+      const flushList = () => {
+        if (!list) return;
+        out.push(`<${list.type}>${list.items.map(item => `<li>${inline(item)}</li>`).join('')}</${list.type}>`);
+        list = null;
+      };
+      for (const rawLine of lines) {
+        const line = rawLine.trim();
+        const heading = line.match(/^(#{1,3})\s+(.+)$/);
+        const bullet = line.match(/^[-*]\s+(.+)$/);
+        const numbered = line.match(/^\d+[.)]\s+(.+)$/);
+        if (!line) { flushParagraph(); flushList(); continue; }
+        if (heading) { flushParagraph(); flushList(); out.push(`<h${heading[1].length}>${inline(heading[2])}</h${heading[1].length}>`); continue; }
+        if (bullet || numbered) {
+          flushParagraph();
+          const type = bullet ? 'ul' : 'ol';
+          if (!list || list.type !== type) { flushList(); list = {type, items: []}; }
+          list.items.push((bullet || numbered)[1]);
+          continue;
+        }
+        if (line.startsWith('> ')) { flushParagraph(); flushList(); out.push(`<blockquote>${inline(line.slice(2))}</blockquote>`); continue; }
+        flushList();
+        paragraph.push(line);
+      }
+      flushParagraph(); flushList();
+      return out.join('');
+    }
+
+    function addMessage(role, text, meta = '') {
+      const el = document.createElement('div');
+      el.className = `msg ${role}`;
+      const body = document.createElement('div');
+      body.className = 'message-body';
+      body.innerHTML = role === 'bot' ? renderMarkdown(text) : escapeHtml(text);
+      el.appendChild(body);
+      if (meta) {
+        const small = document.createElement('span');
+        small.className = 'small';
+        small.textContent = meta;
+        el.appendChild(small);
+      }
+      messages.appendChild(el);
+      messages.scrollTop = messages.scrollHeight;
+      return el;
+    }
+
+    async function addStreamingMessage(text, meta = '') {
+      const el = document.createElement('div');
+      el.className = 'msg bot streaming';
+      const body = document.createElement('div');
+      body.className = 'message-body';
+      el.appendChild(body);
+      messages.appendChild(el);
+
+      const chars = Array.from(text);
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion || chars.length < 2) {
+        body.textContent = text;
+      } else {
+        const duration = Math.min(5000, Math.max(650, chars.length * 18));
+        await new Promise(resolve => {
+          const startedAt = performance.now();
+          let rendered = 0;
+          function frame(now) {
+            const progress = Math.min(1, (now - startedAt) / duration);
+            const next = Math.max(rendered, Math.ceil(chars.length * progress));
+            if (next !== rendered) {
+              body.textContent += chars.slice(rendered, next).join('');
+              rendered = next;
+              messages.scrollTop = messages.scrollHeight;
+            }
+            if (progress < 1) requestAnimationFrame(frame);
+            else resolve();
+          }
+          requestAnimationFrame(frame);
+        });
+      }
+
+      el.classList.remove('streaming');
+      body.innerHTML = renderMarkdown(text);
+      if (meta) {
+        const small = document.createElement('span');
+        small.className = 'small';
+        small.textContent = meta;
+        el.appendChild(small);
+      }
+      messages.scrollTop = messages.scrollHeight;
+      return el;
+    }
+
+    function setTyping(on) {
+      composer.classList.toggle('typing', on);
+      sendBtn.disabled = on;
+      statusEl.textContent = on ? '응답 생성 중 · 다음 질문을 미리 입력할 수 있어요' : '대기 중';
+    }
+
+    async function loadMeta() {
+      const res = await fetch('/api/meta');
+      const data = await res.json();
+      const meta = data.meta;
+      document.getElementById('baseDate').textContent = meta.base_date;
+    }
+
+    let conversationContext = {};
+    let requestInFlight = false;
+
+    async function ask(message) {
+      if (!message.trim() || requestInFlight) return;
+      requestInFlight = true;
+      addMessage('user', message);
+      input.value = '';
+      setTyping(true);
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({message, context: conversationContext})
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || '요청 처리 실패');
+        conversationContext = data.context || {};
+        statusEl.textContent = '답변 작성 중...';
+        await addStreamingMessage(data.reply || '응답이 비어 있습니다.');
+      } catch (err) {
+        addMessage('bot', '연결이 원활하지 않습니다. 잠시 후 다시 시도해 주세요.');
+      } finally {
+        requestInFlight = false;
+        setTyping(false);
+        input.focus();
+      }
+    }
+
+    sendBtn.addEventListener('click', () => ask(input.value));
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        ask(input.value);
+      }
+    });
+
+    document.querySelectorAll('.chip').forEach(btn => {
+      btn.addEventListener('click', () => ask(btn.dataset.prompt));
+    });
+
+    addMessage('bot', '안녕하세요. 궁금한 지역과 날짜, 어종을 알려주세요. 낚시 지수와 바다 날씨를 안내해 드립니다.', '예: “내일 참돔 지역 중 파도가 가장 낮은 곳”');
+    loadMeta().catch(() => {
+      document.getElementById('baseDate').textContent = '확인할 수 없음';
+    });
+  </script>
+</body>
+</html>

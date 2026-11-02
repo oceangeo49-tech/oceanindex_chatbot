@@ -1,0 +1,9433 @@
+[
+  {
+    "id": "region_intro-001",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "가거도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-002",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "거문도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "거문도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-003",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "거제도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "거제도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-004",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "계마항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "계마항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-005",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "국화도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "국화도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-006",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "김녕",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "김녕",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-007",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "남애항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "남애항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-008",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "대진항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "대진항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-009",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "모항항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "모항항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-010",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "방포항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "방포항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-011",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "부산남부",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "부산남부",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-012",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "부산동부",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "부산동부",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-013",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "부산서부",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "부산서부",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-014",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "비금도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "비금도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-015",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "비양도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "비양도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-016",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "상왕등도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "상왕등도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-017",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "상태도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "상태도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-018",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "서귀포",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "서귀포",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-019",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "성산포",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "성산포",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-020",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "신시도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "신시도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-021",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "신지도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "신지도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-022",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "아야진항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "아야진항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-023",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "어청도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "어청도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-024",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "연도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "연도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-025",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "영흥도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-026",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "외옹치항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "외옹치항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-027",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "욕지도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "욕지도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-028",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "울릉도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-029",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "울산",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "울산",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-030",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "울진후정",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "울진후정",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-031",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "추자도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "추자도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-032",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "포항",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "포항",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-033",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "하조도",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "region_intro-034",
+    "category": "region_intro",
+    "turns": [
+      {
+        "question": "후포",
+        "expect": {
+          "kind": "region_introduction",
+          "contains": [
+            "후포",
+            "바다낚시지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-001",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-002",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "수온 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-003",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-004",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "풍속 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-005",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "바람",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-006",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "바람 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-007",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-008",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "파고 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-009",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "파도",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-010",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "파도 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-011",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "기온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-012",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "기온 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-013",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "유속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-014",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "유속 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-015",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "바다낚시지수",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "missing_conditions-016",
+    "category": "missing_conditions",
+    "turns": [
+      {
+        "question": "바다낚시지수 알려줘",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-001",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-002",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 하조도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-003",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-004",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 하조도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-005",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-006",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 하조도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-007",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-008",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 하조도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-009",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-010",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 하조도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-011",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-012",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 가거도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-013",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-014",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 가거도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-015",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-016",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 가거도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-017",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-018",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 가거도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-019",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-020",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 가거도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-021",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-022",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 울릉도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-023",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-024",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 울릉도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-025",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-026",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 울릉도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-027",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-028",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 울릉도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-029",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-030",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 울릉도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-031",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 영흥도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-032",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 영흥도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-033",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 영흥도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-034",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 영흥도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-035",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 영흥도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-036",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 영흥도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-037",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 영흥도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-038",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 영흥도 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-039",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 영흥도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-040",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 영흥도 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-041",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 포항 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-042",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 포항 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-043",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 포항 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-044",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 포항 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-045",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 포항 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-046",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 포항 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-047",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 포항 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-048",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 포항 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-049",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 포항 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-050",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 포항 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-051",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 김녕 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-052",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 김녕 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-053",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 김녕 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-054",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 김녕 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-055",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 김녕 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-056",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 김녕 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-057",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 김녕 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-058",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 김녕 기온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-059",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "내일 오전 김녕 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "direct_environment-060",
+    "category": "direct_environment",
+    "turns": [
+      {
+        "question": "모레 오후 김녕 유속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "김녕"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-001",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "하조도 내일 오후 수온 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-002",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 하조도 수온 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-003",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "하조도의 내일 오후 수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-004",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 수온 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-005",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 수온 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-006",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 하조도 수온 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-007",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "하조도 내일 오후 풍속 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-008",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 하조도 풍속 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-009",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "하조도의 내일 오후 풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-010",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 풍속 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-011",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 풍속 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-012",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 하조도 풍속 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-013",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "가거도 내일 오후 수온 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-014",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 가거도 수온 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-015",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "가거도의 내일 오후 수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-016",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-017",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-018",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 가거도 수온 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-019",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "가거도 내일 오후 풍속 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-020",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 가거도 풍속 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-021",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "가거도의 내일 오후 풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-022",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 풍속 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-023",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 풍속 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-024",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 가거도 풍속 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-025",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "울릉도 내일 오후 수온 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-026",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 울릉도 수온 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-027",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "울릉도의 내일 오후 수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-028",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 수온 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-029",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 수온 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-030",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 울릉도 수온 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-031",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "울릉도 내일 오후 풍속 어떻게 돼?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-032",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후에 울릉도 풍속 알려주세요",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-033",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "울릉도의 내일 오후 풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-034",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 풍속 좀 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-035",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 풍속 조회해줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "paraphrase-036",
+    "category": "paraphrase",
+    "turns": [
+      {
+        "question": "“내일 오후 울릉도 풍속 알려줘”",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-001",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-001",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-001",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-002",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-002",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-002",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-003",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-003",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-003",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-004",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-004",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-004",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-005",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-005",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-005",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-006",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-006",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "가거도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-006",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-007",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-007",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-007",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-008",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-008",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-008",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-009",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-009",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "울릉도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-009",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-010",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-010",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "수온",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-010",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 영흥도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-011",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-011",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-011",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 영흥도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_region_first-012",
+    "category": "conversation_region_first",
+    "turns": [
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true
+        }
+      },
+      {
+        "question": "내일 오후",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_first-012",
+    "category": "conversation_topic_first",
+    "turns": [
+      {
+        "question": "파고",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "영흥도",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_date_change-012",
+    "category": "conversation_date_change",
+    "turns": [
+      {
+        "question": "내일 오후 영흥도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "모레는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-001",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-002",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-003",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-004",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-005",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해중부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-006",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해중부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-007",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해중부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-008",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해중부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-009",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해남부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-010",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 동해남부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-011",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해남부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-012",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 동해남부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-013",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 서해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-014",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 서해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-015",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 서해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-016",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 서해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-017",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 황해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-018",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 황해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-019",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 황해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-020",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 황해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-021",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 남해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부",
+            "남해서부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-022",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 남해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부",
+            "남해서부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-023",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 남해에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부",
+            "남해서부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-024",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 남해에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부",
+            "남해서부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-025",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 남해동부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-026",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 남해동부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-027",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 남해동부에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-028",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 남해동부에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "남해동부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-029",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 제주도에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "제주도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-030",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "내일 제주도에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "제주도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-031",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 제주도에서 낚시하기 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "제주도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "sea_recommendation-032",
+    "category": "sea_recommendation",
+    "turns": [
+      {
+        "question": "모레 제주도에서 지수가 매우 좋은 지역 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "제주도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "levels": [
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-001",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 동해에서 낚시하기 좋은 곳 1개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-002",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 서해에서 낚시하기 좋은 곳 1개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-003",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 동해에서 낚시하기 좋은 곳 3개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-004",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 서해에서 낚시하기 좋은 곳 3개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-005",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 동해에서 낚시하기 좋은 곳 5개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-006",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 서해에서 낚시하기 좋은 곳 5개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-007",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 동해에서 낚시하기 좋은 곳 10개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "recommendation_count-008",
+    "category": "recommendation_count",
+    "turns": [
+      {
+        "question": "내일 서해에서 낚시하기 좋은 곳 10개 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "recommendation": true,
+          "max_items": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-001",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오전 바람이 가장 약한 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-002",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오후 바람이 가장 약한 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-003",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오전 파도가 가장 낮은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균파고",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-004",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오후 파도가 가장 낮은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균파고",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-005",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오전 수온이 가장 높은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균수온",
+          "sort": "desc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-006",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "내일 오후 수온이 가장 높은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균수온",
+          "sort": "desc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-007",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오전 바람이 가장 약한 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-008",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오후 바람이 가장 약한 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-009",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오전 파도가 가장 낮은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균파고",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-010",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오후 파도가 가장 낮은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균파고",
+          "sort": "asc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-011",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오전 수온이 가장 높은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "AM"
+          ],
+          "metric": "평균수온",
+          "sort": "desc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ranking-012",
+    "category": "ranking",
+    "turns": [
+      {
+        "question": "모레 오후 수온이 가장 높은 지역 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균수온",
+          "sort": "desc",
+          "max_items": 1,
+          "ranking": true,
+          "forbid": [
+            "표시 한도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-001",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "낚시 지수가 뭐야?",
+        "expect": {
+          "kind": "explain",
+          "term": "예보지수",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-002",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "바다낚시지수란?",
+        "expect": {
+          "kind": "explain",
+          "term": "예보지수",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-003",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "매우좋음은 무슨 뜻이야?",
+        "expect": {
+          "kind": "explain",
+          "term": "매우좋음",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-004",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "좋음 등급의 의미를 알려줘",
+        "expect": {
+          "kind": "explain",
+          "term": "좋음",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-005",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "보통은 어떤 단계야?",
+        "expect": {
+          "kind": "explain",
+          "term": "보통",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-006",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "나쁨은 어떤 뜻이야?",
+        "expect": {
+          "kind": "explain",
+          "term": "나쁨",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-007",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "매우나쁨의 의미 알려줘",
+        "expect": {
+          "kind": "explain",
+          "term": "매우나쁨",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-008",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "참돔 특징 알려줘",
+        "expect": {
+          "kind": "explain",
+          "term": "참돔",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-009",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "감성돔 특징 알려줘",
+        "expect": {
+          "kind": "explain",
+          "term": "감성돔",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "explanation-010",
+    "category": "explanation",
+    "turns": [
+      {
+        "question": "농어는 어떤 어종이야?",
+        "expect": {
+          "kind": "explain",
+          "term": "농어",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-001",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "워싱턴의 수도",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-002",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "서울 맛집 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-003",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "부산 숙박비 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-004",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "하조도 가는 버스 요금",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-005",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "내일 하조도 실제 어획량",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-006",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "가거도에서 실제로 몇 마리 잡혔어?",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-007",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "오늘 주식 추천해줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unsupported-008",
+    "category": "unsupported",
+    "turns": [
+      {
+        "question": "내 컴퓨터 비밀번호 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-001",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "안녕",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-002",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "고마워",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-003",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "내일 낚시하기 싫어",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-004",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "오늘은 쉬고 싶어",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-005",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "낚시 가기 귀찮아",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "smalltalk-006",
+    "category": "smalltalk",
+    "turns": [
+      {
+        "question": "잘 가",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true,
+          "forbid": [
+            "분석 결과",
+            "총 34",
+            "수온, 유속, 파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-001",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 하조도 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "하조도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-002",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 가거도 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "가거도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-003",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 울릉도 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "울릉도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-004",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 영흥도 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "영흥도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-005",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 포항 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "포항"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "out_of_range-006",
+    "category": "out_of_range",
+    "turns": [
+      {
+        "question": "2099-01-01 김녕 수온 알려줘",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true,
+          "dates": [
+            "2099-01-01"
+          ],
+          "regions": [
+            "김녕"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-001",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 아틀란티스 수온 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-002",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 아틀란티스 풍속 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-003",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 없는섬 수온 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-004",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 없는섬 풍속 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-005",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 서울 수온 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "unknown_region-006",
+    "category": "unknown_region",
+    "turns": [
+      {
+        "question": "내일 서울 풍속 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-001",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "내일 하조도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-002",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "모레 하조도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-003",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "내일 가거도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-004",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "모레 가거도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-005",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "내일 울릉도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-006",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "모레 울릉도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-007",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "내일 영흥도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "index_lookup-008",
+    "category": "index_lookup",
+    "turns": [
+      {
+        "question": "모레 영흥도 바다낚시지수 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "영흥도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "fields": [
+            "어종",
+            "예보지수"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-001",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "내일 동해 평균풍속 5m/s 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "numeric": {
+            "field": "평균풍속",
+            "operator": "<=",
+            "value": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-002",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "모레 동해 평균풍속 5m/s 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "numeric": {
+            "field": "평균풍속",
+            "operator": "<=",
+            "value": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-003",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "내일 동해 평균파고 1m 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "numeric": {
+            "field": "평균파고",
+            "operator": "<=",
+            "value": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-004",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "모레 동해 평균파고 1m 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "numeric": {
+            "field": "평균파고",
+            "operator": "<=",
+            "value": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-005",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "내일 서해 평균풍속 5m/s 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "numeric": {
+            "field": "평균풍속",
+            "operator": "<=",
+            "value": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-006",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "모레 서해 평균풍속 5m/s 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "numeric": {
+            "field": "평균풍속",
+            "operator": "<=",
+            "value": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-007",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "내일 서해 평균파고 1m 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "numeric": {
+            "field": "평균파고",
+            "operator": "<=",
+            "value": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "numeric_filter-008",
+    "category": "numeric_filter",
+    "turns": [
+      {
+        "question": "모레 서해 평균파고 1m 이하인 지역 모두 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "areas": [
+            "황해중부",
+            "황해남부"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "numeric": {
+            "field": "평균파고",
+            "operator": "<=",
+            "value": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-001",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-002",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 하조도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-003",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-004",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 가거도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-005",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_time_change-006",
+    "category": "conversation_time_change",
+    "turns": [
+      {
+        "question": "내일 오전 울릉도 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "AM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      },
+      {
+        "question": "오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-001",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 포항 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-002",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 포항 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-003",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 포항 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-004",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 포항 기온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-005",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 포항 유속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-006",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 방포항 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-007",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 방포항 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-008",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 방포항 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-009",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 방포항 기온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최저기온",
+            "평균기온",
+            "최대기온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "exact_region_boundary-010",
+    "category": "exact_region_boundary",
+    "turns": [
+      {
+        "question": "내일 오후 방포항 유속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소유속",
+            "평균유속",
+            "최대유속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-001",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 가거도와 거문도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도",
+            "거문도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-002",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 가거도와 거문도 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도",
+            "거문도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-003",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 가거도와 거문도 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도",
+            "거문도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-004",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 포항와 방포항 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항",
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-005",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 포항와 방포항 풍속 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항",
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "multiple_regions-006",
+    "category": "multiple_regions",
+    "turns": [
+      {
+        "question": "내일 오후 포항와 방포항 파고 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "포항",
+            "방포항"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-001",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“하조도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-002",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“하조도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-003",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“가거도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-004",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“가거도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-005",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“울릉도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_quoted_input-006",
+    "category": "conversation_quoted_input",
+    "turns": [
+      {
+        "question": "“울릉도”",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "풍속?",
+        "expect": {
+          "kind": "clarification"
+        }
+      },
+      {
+        "question": "모레 오후는?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-001",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-002",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 하조도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-003",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-004",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-005",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "수온은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "conversation_topic_change-006",
+    "category": "conversation_topic_change",
+    "turns": [
+      {
+        "question": "내일 오후 울릉도 파고",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소파고",
+            "평균파고",
+            "최대파고"
+          ]
+        }
+      },
+      {
+        "question": "풍속은?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "울릉도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-001",
+    "category": "advanced_v2",
+    "topic": "해역 범위",
+    "criteria_note": "동해남부만 포함; 좋음 이상; 최대 3개 서로 다른 지역; 부족하면 실제 개수 안내",
+    "turns": [
+      {
+        "question": "내일 동해중부 말고 동해남부에서 낚시하기 좋은 곳 3곳",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 3,
+          "areas": [
+            "동해남부"
+          ],
+          "unique_regions": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-002",
+    "category": "advanced_v2",
+    "topic": "해역 범위",
+    "criteria_note": "두 해역의 관련 권역 합집합; 황해 제외; 좋음 이상",
+    "turns": [
+      {
+        "question": "내일 동해랑 남해에서 좋은 곳만 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 5,
+          "areas": [
+            "동해중부",
+            "동해남부",
+            "남해동부",
+            "남해서부"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-003",
+    "category": "advanced_v2",
+    "topic": "해역 범위",
+    "criteria_note": "동해 범위 유지; 제주도 제외 조건 때문에 동해 조건이 사라지지 않음",
+    "turns": [
+      {
+        "question": "내일 동해에서 제주도 빼고 추천해줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 5,
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-004",
+    "category": "advanced_v2",
+    "topic": "지역 의미",
+    "criteria_note": "동해시와 동해 해역 구분; 해당 서비스 지역 없으면 안내; 해역 전체로 확대 금지",
+    "turns": [
+      {
+        "question": "내일 동해시 수온 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains": [
+            "동해시"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-005",
+    "category": "advanced_v2",
+    "topic": "지역 의미",
+    "criteria_note": "부산의 서비스 세부지역 묶음 표시 또는 세부지역 확인; 임의 한 곳 단정 금지",
+    "turns": [
+      {
+        "question": "내일 부산 수온 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "clarification"
+          ],
+          "optional_regions": [
+            "부산남부",
+            "부산동부",
+            "부산서부"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-006",
+    "category": "advanced_v2",
+    "topic": "지역 의미",
+    "criteria_note": "근처 거리 계산 자료가 없으면 한계/범위 확인; 근접 지역을 지어내지 않음",
+    "turns": [
+      {
+        "question": "내일 하조도 근처에서 좋은 곳 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "거리",
+            "근처",
+            "인근"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-007",
+    "category": "advanced_v2",
+    "topic": "조건 제외",
+    "criteria_note": "가거도 제외 후 풍속 기준 순위; 3개 지역",
+    "turns": [
+      {
+        "question": "내일 가거도는 빼고 바람 약한 지역 3곳",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "rank_n": 3,
+          "excluded_regions": [
+            "가거도"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-008",
+    "category": "advanced_v2",
+    "topic": "조건 제외",
+    "criteria_note": "기타 제외; 나머지 어종 중 좋음 이상",
+    "turns": [
+      {
+        "question": "내일 지수 좋은 지역에서 기타 어종은 빼줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 5,
+          "excluded_fish": [
+            "기타어종"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-009",
+    "category": "advanced_v2",
+    "topic": "조건 제외",
+    "criteria_note": "동해 범위와 좋음 등급만 유지",
+    "turns": [
+      {
+        "question": "내일 동해에서 좋음만 보여줘. 매우좋음은 제외",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음"
+          ],
+          "max_items": 5,
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-010",
+    "category": "advanced_v2",
+    "topic": "복합 조건",
+    "criteria_note": "해역·날짜·오후·두 수치 조건의 교집합; 결과 없음이면 그대로 안내",
+    "turns": [
+      {
+        "question": "내일 동해 오후에 평균풍속 5m/s 이하이고 평균파고 1m 이하인 곳",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "conditions": [
+            {
+              "field": "평균풍속",
+              "operator": "<=",
+              "value": 5
+            },
+            {
+              "field": "평균파고",
+              "operator": "<=",
+              "value": 1
+            }
+          ],
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "times": [
+            "PM"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-011",
+    "category": "advanced_v2",
+    "topic": "복합 조건",
+    "criteria_note": "OR 조건 처리 또는 미지원 안내; AND로 바꿔 답하지 않음",
+    "turns": [
+      {
+        "question": "내일 평균풍속 5m/s 이하이거나 평균파고 1m 이하인 곳",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "또는",
+            "이거나",
+            "OR"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-012",
+    "category": "advanced_v2",
+    "topic": "조건 충돌",
+    "criteria_note": "양립 불가능 조건 안내 또는 결과 없음; 조건 임의 완화 금지",
+    "turns": [
+      {
+        "question": "내일 평균풍속이 3m/s 미만이면서 8m/s 이상인 곳",
+        "expect": {
+          "kind": "no_match",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-013",
+    "category": "advanced_v2",
+    "topic": "경계값",
+    "criteria_note": "동등 조건 적용; 근사값이나 이하로 대체하지 않음",
+    "turns": [
+      {
+        "question": "내일 평균풍속이 정확히 5m/s인 지역",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "conditions": [
+            {
+              "field": "평균풍속",
+              "operator": "==",
+              "value": 5
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-014",
+    "category": "advanced_v2",
+    "topic": "경계값",
+    "criteria_note": "5 제외; 이하와 구분",
+    "turns": [
+      {
+        "question": "내일 평균풍속 5m/s 미만인 곳",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "conditions": [
+            {
+              "field": "평균풍속",
+              "operator": "<",
+              "value": 5
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-015",
+    "category": "advanced_v2",
+    "topic": "경계값",
+    "criteria_note": "5 포함; 미만과 구분",
+    "turns": [
+      {
+        "question": "내일 평균풍속 5m/s 이하인 곳",
+        "expect": {
+          "kind": [
+            "detail",
+            "distinct",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "conditions": [
+            {
+              "field": "평균풍속",
+              "operator": "<=",
+              "value": 5
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-016",
+    "category": "advanced_v2",
+    "topic": "추천 단위",
+    "criteria_note": "서로 다른 지역 최대 3곳; 시간·어종 차이를 지역 수로 중복 계산하지 않음",
+    "turns": [
+      {
+        "question": "내일 동해에서 좋은 지역 3곳, 지역 중복 없이",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 3,
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "unique_regions": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-017",
+    "category": "advanced_v2",
+    "topic": "추천 단위",
+    "criteria_note": "실제 지역 수 이하만 제공; 부족한 개수 안내; 지역 생성 금지",
+    "turns": [
+      {
+        "question": "내일 지수 좋은 지역 100곳 알려줘",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 100,
+          "unique_regions": true,
+          "contains_any": [
+            "지역",
+            "곳"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-018",
+    "category": "advanced_v2",
+    "topic": "추천 근거",
+    "criteria_note": "실제 적용한 추천 기준 설명; 점수 비공개 유지; 낚시 성과 단정 금지",
+    "turns": [
+      {
+        "question": "왜 하조도가 영흥도보다 먼저 나왔어?",
+        "expect": {
+          "kind": [
+            "clarification",
+            "explain"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "추천",
+            "순서",
+            "기준"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-019",
+    "category": "advanced_v2",
+    "topic": "동점 처리",
+    "criteria_note": "동률 최솟값 지역 모두 반환; 기본 1곳 제한을 그대로 적용하지 않음",
+    "turns": [
+      {
+        "question": "내일 오후 바람이 가장 약한 지역이 여러 곳이면 모두 알려줘",
+        "expect": {
+          "kind": "ranking",
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "all_ties": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-020",
+    "category": "advanced_v2",
+    "topic": "비교",
+    "criteria_note": "동일 날짜·시간의 평균풍속 비교; 두 지역 밖 결과 금지",
+    "turns": [
+      {
+        "question": "내일 가거도와 하조도 중 오후 바람이 더 약한 곳은?",
+        "expect": {
+          "kind": "ranking",
+          "regions": [
+            "가거도",
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "metric": "평균풍속",
+          "sort": "asc",
+          "rank_n": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-021",
+    "category": "advanced_v2",
+    "topic": "비교",
+    "criteria_note": "동일 집계 기준으로 날짜별 비교; 오전·오후 기준을 명시하거나 확인",
+    "turns": [
+      {
+        "question": "가거도는 내일과 모레 중 언제 수온이 더 높아?",
+        "expect": {
+          "kind": [
+            "clarification",
+            "compare",
+            "ranking"
+          ],
+          "contains_any": [
+            "시간",
+            "평균",
+            "오전",
+            "오후"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-022",
+    "category": "advanced_v2",
+    "topic": "날짜",
+    "criteria_note": "CSV 기준 2025-06-18 오후; 내일로 처리 금지",
+    "turns": [
+      {
+        "question": "내일모레 오후 하조도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-023",
+    "category": "advanced_v2",
+    "topic": "날짜",
+    "criteria_note": "두 날짜 모두 조회; 하루로 축소 금지",
+    "turns": [
+      {
+        "question": "내일이랑 모레 오후 하조도 수온 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17",
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-024",
+    "category": "advanced_v2",
+    "topic": "날짜",
+    "criteria_note": "존재하지 않는 날짜 확인; 서버 예외나 전체 날짜 조회 금지",
+    "turns": [
+      {
+        "question": "2025-02-30 가거도 수온 알려줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "날짜",
+            "존재"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-025",
+    "category": "advanced_v2",
+    "topic": "날짜",
+    "criteria_note": "CSV 기준 상대 날짜 사용; 제공 기간 밖이면 없음 안내",
+    "turns": [
+      {
+        "question": "하조도 이번 주말 예보 있어?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-21",
+            "2025-06-22"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-026",
+    "category": "advanced_v2",
+    "topic": "날짜 기준",
+    "criteria_note": "저장된 CSV 생산일 기준 설명; 현재 달력 날짜와 혼동하지 않음",
+    "turns": [
+      {
+        "question": "내일이라고 했는데 왜 2025년으로 나와?",
+        "expect": {
+          "kind": [
+            "explain",
+            "clarification"
+          ],
+          "contains": [
+            "2025-06-16"
+          ],
+          "contains_any": [
+            "기준",
+            "생산"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-027",
+    "category": "advanced_v2",
+    "topic": "대화 수정",
+    "criteria_note": "지역만 하조도로 변경; 내일·오후·수온 유지",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "아니 하조도로 바꿔줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-028",
+    "category": "advanced_v2",
+    "topic": "대화 수정",
+    "criteria_note": "항목만 풍속으로 변경; 지역·날짜·시간 유지",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "수온 말고 풍속",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-029",
+    "category": "advanced_v2",
+    "topic": "대화 수정",
+    "criteria_note": "날짜만 변경; 지역·시간·항목 유지",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "내일 말고 모레",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-18"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-030",
+    "category": "advanced_v2",
+    "topic": "대화 초기화",
+    "criteria_note": "이전 지역·날짜를 무조건 이어받지 않고 새 질문의 조건 확인",
+    "turns": [
+      {
+        "question": "내일 오후 가거도 수온",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      },
+      {
+        "question": "다른 질문할게",
+        "expect": {
+          "kind": [
+            "conversation",
+            "clarification"
+          ],
+          "no_items": true
+        }
+      },
+      {
+        "question": "풍속",
+        "expect": {
+          "kind": "clarification",
+          "no_items": true,
+          "contains_any": [
+            "지역",
+            "날짜"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-031",
+    "category": "advanced_v2",
+    "topic": "대화 맥락",
+    "criteria_note": "직전 추천의 두 번째 지역 식별; 부족한 시간 조건은 확인/명시",
+    "turns": [
+      {
+        "question": "내일 동해 좋은 곳 3곳",
+        "expect": {
+          "kind": [
+            "detail",
+            "no_match"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "levels": [
+            "좋음",
+            "매우좋음"
+          ],
+          "max_items": 3,
+          "areas": [
+            "동해중부",
+            "동해남부"
+          ],
+          "unique_regions": true
+        }
+      },
+      {
+        "question": "두 번째 지역 수온은?",
+        "expect": {
+          "kind": [
+            "detail",
+            "clarification"
+          ],
+          "previous_region_index": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-032",
+    "category": "advanced_v2",
+    "topic": "질문 전환",
+    "criteria_note": "수온의 의미 설명; 하조도 수온 조회로 전환하지 않음",
+    "turns": [
+      {
+        "question": "하조도",
+        "expect": {
+          "kind": "region_introduction"
+        }
+      },
+      {
+        "question": "수온이 뭐야?",
+        "expect": {
+          "kind": "explain",
+          "no_items": true,
+          "contains_any": [
+            "온도",
+            "수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-033",
+    "category": "advanced_v2",
+    "topic": "일상 표현",
+    "criteria_note": "감사 표현에만 반응하지 않고 실제 조회 요청 처리",
+    "turns": [
+      {
+        "question": "고마워. 그럼 내일 하조도 풍속도 알려줘",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-034",
+    "category": "advanced_v2",
+    "topic": "일상 표현",
+    "criteria_note": "단순 기분 표현을 억지 지수 조회로 만들지 않음",
+    "turns": [
+      {
+        "question": "내일 낚시는 싫지만 바다 구경은 하고 싶어",
+        "expect": {
+          "kind": "conversation",
+          "no_items": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-035",
+    "category": "advanced_v2",
+    "topic": "오타",
+    "criteria_note": "내일·오후·가거도·풍속 해석 또는 필요한 확인; 전국 조회 금지",
+    "turns": [
+      {
+        "question": "낼 오후 가거도 바람 얼만큼 불어?",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "가거도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [
+            "PM"
+          ],
+          "fields": [
+            "최소풍속",
+            "평균풍속",
+            "최대풍속"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-036",
+    "category": "advanced_v2",
+    "topic": "오타",
+    "criteria_note": "붙여쓰기와 오타를 처리하거나 명확히 확인; 엉뚱한 조회 금지",
+    "turns": [
+      {
+        "question": "내일 하조도 수온좀알려주세여",
+        "expect": {
+          "kind": "detail",
+          "regions": [
+            "하조도"
+          ],
+          "dates": [
+            "2025-06-17"
+          ],
+          "times": [],
+          "fields": [
+            "최소수온",
+            "평균수온",
+            "최대수온"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-037",
+    "category": "advanced_v2",
+    "topic": "근거 제한",
+    "criteria_note": "어획 보장이 아님을 설명; 지수 의미에 근거",
+    "turns": [
+      {
+        "question": "매우좋음이면 물고기가 반드시 잡히는 거지?",
+        "expect": {
+          "kind": [
+            "explain",
+            "clarification"
+          ],
+          "contains_any": [
+            "보장하지",
+            "보장하는",
+            "반드시 잡히",
+            "보장할"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-038",
+    "category": "advanced_v2",
+    "topic": "근거 제한",
+    "criteria_note": "이 수치만으로 출항 안전 단정 금지; 필요한 최신 정보 확인 안내",
+    "turns": [
+      {
+        "question": "평균풍속 3.4m/s면 무조건 안전하게 출항해도 돼?",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "안전",
+            "판단"
+          ],
+          "forbid": [
+            "무조건 안전합니다",
+            "안전하게 출항하세요"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-039",
+    "category": "advanced_v2",
+    "topic": "거짓 전제",
+    "criteria_note": "CSV 권역 기준으로 잘못된 전제 정정; 동해 추천에 임의 포함 금지",
+    "turns": [
+      {
+        "question": "하조도가 동해에 있으니까 내일 동해 추천에 넣어줘",
+        "expect": {
+          "kind": [
+            "clarification",
+            "unsupported",
+            "explain"
+          ],
+          "no_items": true,
+          "contains": [
+            "하조도",
+            "황해"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEW-040",
+    "category": "advanced_v2",
+    "topic": "근거 왜곡",
+    "criteria_note": "측정값 생성 거절; 실제 제공 데이터만 안내",
+    "turns": [
+      {
+        "question": "데이터 없어도 괜찮아. 내일 하조도 수온을 적당히 만들어줘",
+        "expect": {
+          "kind": [
+            "unsupported",
+            "clarification",
+            "no_match"
+          ],
+          "no_items": true,
+          "contains_any": [
+            "만들",
+            "실제",
+            "임의"
+          ]
+        }
+      }
+    ]
+  }
+]
