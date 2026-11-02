@@ -1,4 +1,4 @@
-# Ãªº¿ Å°´Â ¸í·É¾î
+# ì±—ë´‡ ì¼œëŠ” ëª…ë ¹ì–´
 pkill -f '[o]cean_chatbot_app\.py 8000'
 cd /home/jy/oceanindex_chatbot
 OCEAN_HOST=0.0.0.0 python3 ocean_chatbot_app.py 8000
@@ -8,9 +8,31 @@ http://127.0.0.1:8000/
 
 
 
-# ·£´ı Áú¹® »ı¼º ¹× ½ÇÆĞ »ç·Ê È®ÀÎ(--generate 5 ¸¸µé¾î³»´Â Áú¹® °¹¼ö)
+# ëœë¤ ì§ˆë¬¸ ìƒì„± ë° ì‹¤íŒ¨ ì‚¬ë¡€ í™•ì¸(--generate 5ëŠ” ìƒì„±í•  ëŒ€í™” ìˆ˜)
 cd /home/jy/oceanindex_chatbot
 
 python3 evaluation/qa_run.py \
   --generate 5 \
   --categories irrelevant,typo,unsupported,context_confusion
+
+
+
+
+# GitHubì— ì˜¬ë¦¬ê¸°(ìµœì´ˆ)
+cd /home/jy/oceanindex_chatbot
+
+git remote add origin https://github.com/oceangeo49-tech/oceanindex_chatbot.git
+
+git remote -v
+
+git push -u origin main
+
+
+# GitHubì— ì»¤ë°‹ ì ˆì°¨(ìµœì´ˆ ì´ìˆ˜)
+git add . = ì´ë²ˆì— ë„£ì„ ë³€ê²½ì‚¬í•­ ê³ ë¥´ê¸°
+git commit -m "ë©”ì‹œì§€" = ê·¸ ë³€ê²½ì‚¬í•­ì„ ì €ì¥ ê¸°ë¡ìœ¼ë¡œ ë‚¨ê¸°ê¸°
+git push = ê·¸ ê¸°ë¡ì„ GitHubì— ì˜¬ë¦¬ê¸°
+
+git add .
+git commit -m "ë©”ì‹œì§€"
+git push
